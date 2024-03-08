@@ -1,0 +1,194 @@
+---
+title: Question 5
+---
+```{python}
+import numpy as np
+import pandas as pd
+```
+
+## Benefit Formula
+
+This formula describes how much the retiree will recieve when he/she retires, it is a function of 2 variables listed below
+$$AP = .02 * S_t * N$$
+
+* $AP$ = Annual Payment
+* $S_t$ = Final salary
+* $N$ = number of years worked
+
+### Expected Years Worked
+
+The expected years worked is not effected by the valuation metric we choose (ABO/PBO), so this variable will stay constant in both cases. We tried estimating the expected years worked using a weighted average approach, similar to the idea of computing duration: 
+
+$$EY = p^T y$$
+
+where 
+
+* $p$ = vector of normalized probabilities for staying each year
+* $y$ = vector of years
+* both vectors are $30 \times 1$
+
+
+```{python}
+def prob_of_staying_n_years(n, prob_stay):
+    
+    """
+    Helper Function To Determine Probability Of Staying With Company For
+    n Years
+
+    P(stay_n_years) = prob_stay ^ n
+    """
+    return prob_stay ** n
+
+def expected_num_years_worked(current_age, retirement_age, prob_stay):
+    """
+    Function To Calculate The Excpected Number Of Years With The Company
+    """
+    num_years_worked = retirement_age - current_age # total number of years that the retiree will work (even if he/she leaves the company)
+    probs = [1] # list of probabilities that worker stays for a given years
+                # the worker has a 100% chance of staying for 1 year (given)
+    
+    # iterate through all the working years
+    # add the probability of staying to the list of probabilities
+    for year in range(2, num_years_worked + 1):
+        prob = prob_of_staying_n_years(year, prob_stay) # probability that worker stays for n years
+        probs.append(prob)
+    
+    # normalize the probabilities list so that the actual values will
+    # sum up to 1, that is probs.sum() = 1
+    years_worked = np.arange(1, num_years_worked + 1, 1) # list of working years (30 total)
+    probs_years = np.array(probs)                        # convert probability list to numpy array
+    total_probs = probs_years.sum()                      # add up all probabilities
+    probs_years_normalized = probs_years / total_probs   # normalize the probabilities 
+
+    expected_years_worked =  years_worked @ probs_years_normalized 
+    return expected_years_worked
+```
+
+```{python}
+# inputs
+prob_of_leaving_year = .04
+prob_of_staying_year = 1 - prob_of_leaving_year
+
+
+expected_years_worked = round(expected_num_years_worked(35, 65, prob_of_staying_year))
+print(f"expected years worked: {expected_years_worked}")
+```
+
+The expected years worked is around 12 years. In the next 2 sections we try to find the different values for the final salary!
+
+## ABO
+
+The ABO assumes the salary of the worker will not increase, this simplifies the estimation of $S_t$ becaue $S_t$ is simply the workers current salary!
+
+```{python}
+def expected_annual_payment(pos, fin_salary, num_years):
+
+    """Calculate The Excpected Annual Payment Using Benefit
+    
+    arguments:
+        pos (percent of salary) = fixed % of the salary
+        fin_salary (final salary) = final salary where pos is calculated from
+        num_years = number of working years
+    """
+    return pos * fin_salary * num_years
+```
+
+```{python}
+# inputs (given)
+num_years_benefit = 20
+current_salary = 100000
+
+# expected annual payment
+expected_ann_pay_abo = expected_annual_payment(.02,current_salary,expected_years_worked)
+expected_total_payment = expected_ann_pay_abo * num_years_benefit
+print(f"expected annual payment = {expected_ann_pay_abo}")
+print(f"expected total payments = {expected_total_payment}")
+```
+
+## PBO
+
+PBO tries to incorporate future salary increases which is a bit more complicated. 
+
+```{python}
+def forecaset_nominal_salary(current_salary, inflation_rate, fixed_spread, salary_increase_period):
+
+    """
+    Forecast The Future Expected Salary Of The Worker 
+    """
+    no_increase_period = 5 # has to wait 5 years before his salary increases
+    growth_rate = inflation_rate + fixed_spread # salary growth rate
+    salaries = no_increase_period * [current_salary] # list of forecasted salaries
+    
+    for i in range(1, salary_increase_period + 1):
+        salaries.append(current_salary * (1 + growth_rate) ** i)
+
+    return salaries
+```
+
+```{python}
+# inputs
+inflation_rate = .035
+fixed_spread = .02
+salary_increase_period = 25
+
+# all forecasted salaries
+forecasted_salaries = forecaset_nominal_salary(current_salary, inflation_rate, fixed_spread, salary_increase_period)
+
+# forecasted salary for worker's expected years of service
+final_salary = round(forecasted_salaries[expected_years_worked],2)
+
+print(f"estimated final salary using PBO {final_salary}")
+```
+
+```{python}
+expected_ann_pay_pbo = round(expected_annual_payment(.02, final_salary,expected_years_worked),2)
+print(f"estimated annual payment using PBO {expected_ann_pay_pbo}")
+```
+
+To recap, we have the following estimations of the benefit that will be paid out annually for the 2 valuation metrics:
+
+* ABO: $24000.00
+* PBO: $36832.48
+
+Note that the PBO is higher than the ABO, which makes economic sense because PBO incorporates the value of "growth" in salary
+
+## Calculating The Annuities 
+
+Now the final steps are to find the present value of the annuity that pays out the benefit. We think the present value can be treated as the **future value** of an annuity that pays $x$ starting from the workers first day of employment. This annuity is the amount that the pension fund should contribute in order to ensure that the worker has enough for retirement. This process should be the same for both valuation types!
+
+```{python}
+def pv_annuity(payment, years, interest_rate):
+    return (payment / interest_rate) * (1 - 1/ (1 + interest_rate) ** years)
+
+def annuity_payment(fv, years, interest_rate):
+    return (fv * interest_rate) / ((1+interest_rate) ** years - 1)
+```
+
+
+```{python}
+# inputs
+ir = .06
+pay_years = 20
+contribution_years = 30
+
+# present value of the benefit annuities
+pv_abo = round(pv_annuity(expected_ann_pay_abo, pay_years, ir),2)
+pv_pbo = round(pv_annuity(expected_ann_pay_pbo, pay_years, ir),2)
+print(f"present value of annuity (abo): {pv_abo}" )
+print(f"present value of annuity (pbo): {pv_pbo}" )
+
+
+payment_abo = round(annuity_payment(pv_abo, contribution_years, ir),2)
+payment_pbo = round(annuity_payment(pv_pbo, contribution_years, ir),2)
+
+print(f"annual contribution (abo): {payment_abo}")
+print(f"annual contribution (pbo): {payment_pbo}")
+```
+
+## Sensitivity Analysis
+
+```{python}
+inflation_rates = [inflation_rate - .005, inflation_rate + .005] # changes in 50 basis points of real interest
+nominal_rates = [ir - .005, ir + .005] # changes in 50 points in nominal interest
+
+```

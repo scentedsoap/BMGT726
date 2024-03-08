@@ -1,0 +1,65 @@
+---
+title: Week3B Private Equity Compensation
+---
+1. While profit has a similar meaning among private equity and hedge funds, income from underlying investments, the way that hedge funds and private equity funds measure profit differ from each other. In the case of hedge funds, **profits usually come from the buying and selling of individual assets**, or the **positive price appreciation of a hedge fund's position**. Private Equity profits on the other hand are calculated from the **income generated from an underlying company**, and the **eventual selloff/IPO of that company**. Usually with both types of managers, there is a **hurdle rate**  that specifies the **rate that managers need to earn a return over in order to collect an incentive fee** or a **high water mark** that specifies **managers collect an incentive fee only when the fund level is above a previous high**
+
+2. Yale is able to conduct **due diligence** on its maangers and offer **favorable fee structures** to align incentives. For example, Yale structures fees so that they pay a low amount of fixed fees, but higher performance fees to incentivize its managers. Due diligence means understanding a hedge fund/private equity fund's strategy, past performance, and even visiting the managers to understand how they think. Through this process, Yale is able to increase the transparency of the investment vehicle which helps them make an informed investment decision. Yale also has a highly skilled internal team and doesn't need an army of consultants to help make investment decisions. This helps limit any conflict of interests that Yale might face with it's consultants (payment for order flow)
+
+**EXTRA CREDIT: Read the papers “High Water Marks and Hedge Fund Management
+Contracts” by Goetzmann, Ingersoll, and Ross (The Journal of Finance, August 2003).
+Since this is a paper aimed at readers with Ph.D. degrees in finance or economics, please
+feel free to skim through equations that you do not understand, but instead focus on the
+intuition behind the authors’ ideas and the content of the tables. Provide a brief summary
+of what you think this paper says that might be of interest to potential limited partners in
+hedge funds, such as Yale or Harvard.
+
+4. ***EXTRA CREDIT (VERY HARD): Try to replicate a special case of the methodology in the
+paper by Goetzmann, Ingersoll, and Ross.
+
+
+Notes:
+
+* Risk that Pensions face when investing in Hedge Funds and Private Equity
+    * HF might engage in illiquid/thinly traded securities
+    * exiting a position is diffifuclt
+    * leverage increases risk!!!
+    * Hedge Funds are not inclined to reveal their holdings and strategies
+    * Private Equity Acquistions are hard to value!!!
+    * Fee structures for PE/HF (2% Commited Capital, 20% Profits)differ from mutual fund managers (1% AUM)
+
+* How do Plan Sponsers address the above challenges?
+    * negotiate fee structures and valuation procedures
+    * control degree of leverage
+    * due diligence and monitoring
+
+
+* how can planm sponsers evaxluate HFs?  
+    * study of HF investment process 
+    * how a HF conducts its valuaiton
+    * Risk management processes
+    * compliance procedures
+    * back office operations
+    * performance relative to benchmarks
+
+* HOw can plan sponsors evaluate private euqity?
+    * note that private equity managers tend to be persistent, that is the top performing fund managers suusually stay at the top
+
+
+Gao Conflict of Interest:
+
+* Pension Plans hire consultants to help with advisory services
+    * there seems to be an association with the consultants who do not disclose conflicts of interest and lower rates of returns
+
+How does David Swensen think about valuation of private equity?
+* private equity is hard to value
+* 
+
+How do private equity firms value their companies?
+* usually just value the underlying firms at initial cost
+* then the returns are calculated the exit of the firm
+
+How do 
+
+
+
+ 

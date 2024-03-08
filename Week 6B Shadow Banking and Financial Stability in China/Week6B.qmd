@@ -1,0 +1,28 @@
+---
+title: Week6B Shadow Banking and Financial Stability in China
+author: Bryan Zhang
+---
+
+1. I think the shadow banking products are similar to all of these (ABACUS, short-term commercial paper, and US money market funds) There is no one size fits all category for the Chinese Shadow Banking Products, Franklin Allen and Xian Gu wrote about undiscounted bankers' acceptance(similar to commercial paper), entrusted loans, wealth and asset management products(similar to ABACUS and money market funds), which serve as funding in simliar ways to the assets described above. 
+
+2. Interestingly, China does not levy any property tax^[https://www.nytimes.com/2023/05/10/business/china-property-tax.html]. The way that the government was able to generate money was by leasing or selling land to property developers, but recently, this activity has slowed down as lots of developers in China are facing financial distress (they are highly leveraged, falling home prices). Levying property taxes could be an important source of revenue for the country in the future as the real estate market tries to recover. 
+
+3. These authors suggest that limiting construction is the most important policy to prevent a dramatic decline in housing prices. They observed high vacancy rates in tier 3 and 4 cities where the supply is more than demand. By limiting construction, the supply of housing will theoritcally become less saturated, allowing the prices to stay relatively high. 
+
+4. Kaiji Chen and Yi Wen propose 4 policy implementations/suggestions to deal with rising housing prices:
+
+    1. builidng a transparent housing transaction and property registration system
+    2. restricting purchases from non-residents (capital controls)
+    3. levy property taxes
+    4. facilitate a rental market
+
+all of these policies are meant to slow down the rising "bubble" in housing prices and transfer capital over to the "real" economy. Having a transparaent transaction and property registration system can empower the local, state, and federal government with lots of data and oversight on housing trends. The idea of restricting ownership to people that live in the city/region could prevent outside investors pushing up housing prices while growing the vacancy rate. 
+
+5. I think these various authors favor increased regulation, but in moderation. They support the idea of the government taking steps to limit future growth of housing prices, but think its a bad idea for the government to make the housing bubble "pop". This could be catostrophic for the Chinese economy as millions of households are overexposed to the real estate market
+
+6. I believe that shadow banking does pose a systemic risk to the Chinese economy because of its unregulated nature. There are no government guarantees behind these products, with most of the credit risk falling onto the "entrusted" bank (who might be over their loan cap). There is also an increasing amount of financing that takes place within the shadow banking system so if the entrusted loans or bankers acceptance market were to tank, it would have a huge impact on the economy
+
+
+
+
+

@@ -1,0 +1,81 @@
+---
+title: Week6A Asset Managers Systemic Risk
+author: Bryan Zhang
+---
+1. OFR defines "asset managers" as agents who invest on behalf of its clients, but BlackRock differs from the OFR in that it believes that Asset managers are not "direct participants in the capital markets"^[SEC comments: https://www.sec.gov/comments/am-1/am1-14.pdf]
+
+2. It seems like OFR places systemic responsiblity on asset management firms, which BlackRock does like (or seem to want) because of increased scrutiny and regulation within the industry
+
+3. The asset manager acts as an agent on behalf of its clients and has no claim to the underlying assets. I think this may be a bit inconsistent because BlackRock does charge fees for its services that ultimately are determined by the AUM.
+
+4. I think that Blackrock would say the limited partners of the fund are the owners. The corporate pension plan is one of the limited partners. 
+
+5. Life insurers have longer duration securities because the underlying claims are further out in the future than property and casualty. 
+
+6. BlackRock argues that regulation is good for the asset management idea, but certain "types" of regulation is not good, notably regulations that restricts BlackRocks (and asset managers) ability to grow. I think BlackRock wants to save face by agreeing on regulation, showing its clients that it is trustworthy and reasonable 
+
+7. Yes Blackrock has grown by investing aquiring other companies, notably Barclays Global Investors and Merrill Lynch Investment Advisors. Usually there is no more than 10% of AUM paid for the transaction. 
+
+```{python}
+# barclays global investors aquisition
+dv1 = 13502
+aum1 = 144000
+print(f"percent of assets under management: {round(dv1/aum1 * 100)}%")
+
+# merrill lynch investment advisors aquisition
+dv2 = 9602
+aum2 = 544000
+print(f"percent of assets under management: {round(dv2/aum2 * 100)}%")
+```
+
+8. BlackRock argues that mutual fund redemption poses a minimal systemic risk, but there is still a risk that redemptions in a fund have a self-reinforcing behavior as investors exit their positions and assets are sold at a loss. Yale deals with this by operating in seperately managed accounts
+
+9. I think the IMF tilts towards the view of the OFR that asset managers do pose a systemic risk but also agrees with BlackRock that oversight/regulation should be focused on product specific risks
+
+10. Shadow Banking is a collection of non-traditional entities that provide financing for different institutions. Shadow Banks can take in the form on money market funds, SPVs for securitized products, and Repo markets. 
+
+11. I think so because there seems to be an inherent product risk with the Wealth Management Products, specifically a "roll over risk when a large amount of WMPs mature"^[Shadow Banking in China Compared To Other Countries *Franklin Allen, Xian Gu* https://onlinelibrary.wiley.com/doi/10.1111/manc.12331]
+
+
+
+12. 
+```{python}
+import numpy as np
+import pandas as pd
+
+x_exposure = np.array([-3, -2, -1, -.5, 0, .3 , .5, .6, .9, 1, 1.5, 2, 3]) # exposure to index
+returns_of_market = np.array([-.01] * len(x_exposure))                     # return of index (-1%)
+returns_of_portfolio = x_exposure * returns_of_market
+investment_value = x_exposure * (1 + returns_of_market)                              # value of index portfolio
+buy_sell = returns_of_market * x_exposure * (x_exposure - 1)               # how much to buy/sell to achieve target
+
+
+columns_dict = {
+    "X exposure": x_exposure,
+    "Return": returns_of_portfolio,
+    "Buy(+) or Sell (-)": buy_sell
+}
+
+etf_df = pd.DataFrame(columns_dict)
+etf_df["Stabilizing or Destabilizing"] = etf_df["Buy(+) or Sell (-)"].map(lambda x: "Destabilizing" if x < 0 else "Stabilizing")
+
+display(etf_df)
+```
+
+If an ETF is leverged or Inverse then the rebalancing is destablizing, the amount follows the following:
+$$ T = r \times \delta \times (\delta - 1)$$
+where 
+
+* $T$ = % to buy or sell
+* $r$ = return of underlying index
+* $\delta$ = leverage
+
+The rebalancing effect is different for 3X levered long ETFs and -3X short ETFs because there is more of a destabilizing effect on the short position than the long position (2X Long = -2X Short).  
+
+13. I think the Levered long ETF is like buying a call option, while the short ETF is like buying a put option
+
+
+
+Notes:
+
+* reaching for yield: take on higher risk to achieve a higher return

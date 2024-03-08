@@ -1,0 +1,41 @@
+10. *EXTRA CREDIT: Should Yale try to modify limited partnership agreements of the funds in which it invests so that it can exercise significant power over specific investment deci- sions, in order to better employ its accumulated expertise? HINT: You might need to think like a lawyer to answer this question correctly!
+
+I think that in theory it might be wise, but in practice it's more troublesome. For example, if Yale were to invest as a limited partner with Warburg Pincus, and Warburg Pincus is also attracting investors like the Norweigian's Government Pension Global Fund, and GM's corporate pension plan. These limited partners may find it suspect that Yale is influecing the investment decisions when they had originally gave their money to Warburg Pincus. 
+
+
+11. **EXTRA CREDIT: If Swensen decides that the CAPM beta of private equity is larger than previously thought, how would this information affect his fund’s allocation to private equity, taking into account the historical returns earned by private equity investments.
+
+A higher beta means a lower alpha or excess return. David Swensen himself believes in capturing "excess returns" from less efficient private markets but if the markets are becoming more efficient (less alpha) then he might decide to reduce his allocation towards private equity. But then Swensen would think where to put his money in, and there may not be "alpha-generating" asset classes for him to invest in. In that case he might keep his money parked in private equity. 
+
+12. *EXTRA CREDIT: How much transparency should Yale demand from the funds it invests it? How would Yale prevent its hedge fund managers from “reaching for yield” or practicing financial engineering?
+
+I think Yale should demand some form of transparency, in the sense that???
+
+13. Having a seperate account can help Yale by protecting itself from investment outflows by other limited partners. We've talked about a few cases in class where the markets have periods of high selling pressure and hedge funds that have destabilizing strategies. These problems are exacerbated when limited partners take their money out of a "comingled" account, forcing sales of assets to meet the cash outflows. 
+
+
+
+14. *EXTRACREDIT:If the university believes that having “superstars”like David Swensen in charge of its endowment allows it to outperform other university endowments by several hundred basis points per year, does this belief suggest that the university should increase, decrease, or leave the same its target annual spending rate as a proportion of assets, in comparison with an alternative belief that Yale’s stellar performance over the years is the result of luck rather than having super-skilled endowment managers? How is your answer influenced by changes in Yale’s spending rate over time?
+
+
+
+15. **EXTRA CREDIT: A “convex function” is defined as a function with the property that a straight line connecting two points on the graph of the function never lies below the graph itself. Draw a graph of the payoff of a call option as a function of the realized value of the underlying asset. Explain how this is similar to the carried interest component of the compensation of a private equity asset manager. Explain how the slope and convexity of the function are related to incentives for the asset manager to work on behalf of the client (Yale) and to take risk. With respect to the investment strategy of the fund, does the convex shape suggest that Yale is more risk averse or less risk averse than its asset managers?
+
+```{python}
+from matplotlib import pyplot as plt
+import numpy as np
+import pandas as pd
+
+stock_price = [0, 10, 20, 30, 40, 50, 60, 70]
+payoff = [-500, -500, -500, -500, -500, 500, 1500, 2500]
+break_even = [0, 0, 0, 0, 0, 0, 0, 0]
+
+fig, ax = plt.subplots(figsize=(8, 5))
+ax.plot(stock_price, payoff)
+ax.plot(stock_price, break_even, '--', color="grey")
+ax.set_title("Call Option Payoff")
+ax.set_xlabel("Stock Price")
+ax.set_ylabel("Profit")
+```
+
+The idea of a call option is very similar to the idea of carried interest because carried interest usually only exists if some "hurdle" is met which can be thought of as the strike price + the premium paid for the call option. Because the payoff is upward sloping and convex, the payoff is essentially unlimited, which surely incentives private equity firms. I think the convex nature of the call option may make Yale less risk averse because the upside is unlimited. 

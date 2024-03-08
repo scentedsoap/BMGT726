@@ -1,0 +1,15 @@
+---
+title: Week 5 General Motor Pension
+author: Bryan Zhang
+---
+1. Even though prices of issued bonds rise, falling interest rates cause the discount rate for future pension liabilities to decline, causing the present value of future pension liabiltiies to increase
+
+2. I think so because the calculation of the current funding status should incorporate some type of excpected/acturial rate of return that the plan is able to generate with its assets. 
+
+3. I think on a year to year basis it could make more sense to fund ABO because PBO does have more uncertainty built into the present value calculation (assumes that people will stay with the company and also amkes assumptions about future salary). This can lead to companies overestimating their pension obligations. However, PBO is likely the better metric to measure the burden of the pension to the firm because of the going concern valuation. 
+
+4. I don't think there is a realistic case where corporate pension funds should invest only in bonds. Stocks have historically had an equity premium over bonds, and in the long term, have outperformed the returns of bonds. Due to the long horizon of a pension fund (the horizon is until the end of time) the risk can be spread through different time periods. There are tax incentives to generate higher returns as well, because there is no tax on Capital Gains, pension funds should try to maximize returns at a moderate level of risk. Maybe there is a case where a pension fund will never have to worry about being underfunded, then having a portfolio of high quality bonds will ensure that the money is safe, but I do think this is unlikely to happen. 
+
+5. I think that a corporation might want to under-fund their pension plans because they believe that they can generate a higher return from reinvesting money back into their business. Then when the time comes for benefits to be paid out, firms will be able to use cash flows to pay. Another reason could be that surplus assets in pension plans can only be used towards paying out future benefits, if the company were to tap those assets it would be levied a tax. I think corporations would want to overfund their pension fund to add a "cushion" so that in bad economic conditions, the fund is still healthy. From an options perspective, a put option could represent the funding gap between the plan assets and liabilities while a call option could represent the funding excess between plan assets and liabilties. The PBGC tries to prevent corporations from underfunding their pensions by levying a Variable Rate Premium on underfunded plans. This is a premium that corporations pay to the PBGC
+
+6. I think that GM is trying to mimic David Swenson's Yale model by investing in alternative assets (PE, Hedge Funds) to earn some type of excess return on the market. They are currently facing some issues with underfunding and so they are issuing debt to fund the plan and hoping to earn a return in excess of the interest

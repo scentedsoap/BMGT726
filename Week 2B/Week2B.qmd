@@ -1,0 +1,16 @@
+---
+title: Bryan Zhang Week 2B The Norway Model
+---
+1.  Norway has set up a system called the Government Pension Fund Global that acts like a sovereign wealth fund, **providing future income to it's citizens**. Th fund helps develop Norway's economy (by making investments within its country) and enhances strategic relationships with other countries by investing in their nation. Norway approaches diversification by **investing in different geographies (Europe, Asia, Americas)** with a small emphasis on asset classes. To minimize corruption, Norway has been transparent with its holdings, and has multiple Councils to help with operations. One of the main ways that Norway has incentived active managers to generate alpha is with performance bonsues.^[David Chambers, Elroy Dimson, Antii Ilmanen, “The Norway Model,” October 11, 2011.
+https://www.legis.nd.gov/assembly/62-2011/docs/pdf/lbs082312appendixd.
+pdf]
+
+2. From the passive approach the Norway has a list of companies that it believes violates its **product** and **conduct** ethics^[Norges Bank Investment Management: https://www.nbim.no/en/responsible-investment/ethical-exclusions/exclusion-of-companies/]. From the "activist" approach, Norway has exercised its right to vote in important matters within companies and has influece on choosing board members that align with their interests/ethics(mostly done through active managers). The **alpha costs** of ESG investing could be calculated by comparing a basket of "ESG" stocks vs a broad based benchmark and politics are minimized by independent management^[David Chambers, Elroy Dimson, Antii Ilmanen, “The Norway Model,” October 11, 2011.
+https://www.legis.nd.gov/assembly/62-2011/docs/pdf/lbs082312appendixd.
+pdf]
+
+3. The biggest difference I see is that Norway is betting on **taking higher risk for a higher return** through **different "risk premiums"** like **size**, **value**, and **liquidity** in **efficient** markets. ^[David Chambers, Elroy Dimson, Antii Ilmanen, “The Norway Model,” October 11, 2011.
+https://www.legis.nd.gov/assembly/62-2011/docs/pdf/lbs082312appendixd.
+pdf]Yale is betting on **excess returns for a consistent level of risk** within **ineffcient** markets, the biggest being **private equity**. At face value, I think that Norway and Yale should continue using their own models. Norway is a **soveriegn nation** that has a duty towards it people, and large capital outflows from its fund to its citizens, so the secret and illiquid qualities of private equity isn't a great match.
+
+

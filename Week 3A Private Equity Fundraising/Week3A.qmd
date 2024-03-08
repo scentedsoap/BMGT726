@@ -1,0 +1,16 @@
+---
+title: Bryan Zhang Week 3A Private Equity Fundraising
+---
+
+1. The standard structure for compensation usually follows the 20/80 split. 80% of profits go to the limited partners(investors) and 20% of profits go to the general partner(fund manager). Warburg, Pincus proposed a new fee structure of 15/85 split for its new fund that allocates limited partners 85% of profits and general partners 15%. I think it's possible that Warburg Pincus might have thought private equity flows(funds invested in private equity) were increasing to the point of diminishing returns, and so to protect the returns of the limited partners, Warburg, Pincus is willing to take on lower fees. I should note that the annual management fee increased from 1% to 1.5% which helps soften the reduction in fees for Warburg Pincus
+
+2. I think David Swensen would pay close attention to the fee structure that Warburg Pincus has for its new fund when making his decision. The new fee structure gives Yale an attractive opprotunity compared to peer funds that mostly take 20% of the profits (carried interest). Swensen would also evaluate the history of the firm, and past funds that Warburg Pincus has managed and I think that a few things would stand out. The first being that Warburg Pincus has a willingness to go against trends in the industry (mid 1980s). Second, it doesn't "specialize" in a specific industry like technology or healthcare, but has a more general view and targets. Lastely, Warburg, Pincus has a very "exclusive" list of clientele that of big institutional investors like Harvard, GM, IBM
+
+3. Warburg Pincus has more employees compared to smaller, newer VC organizations which likely leads to higher compensation expenses. This likely causes issues because the fund needs to charge a higher % of capital under management if Warburg Pincus and a smaller firm are raising a fund with the same amount of capital under management in order to cover compensation costs for its employees. 
+
+4. I think that asset allocation decisions should be made by both the plan sponsors themselves and the asset managers they hire. At the top level, plan sponsors should have an idea of what their target allocations are for different asset classes (PE, VC, HF) as these decision likely have the biggest impact on returns. The decision to invest in "Emerging" vs "Developed" economies is also an important factor for future returns that a plan sponsor should consider so it can choose managers that specialize in these asset classes/geographies. Investment Managers should focus on more "micro" decisions like the industries or countries to invest in. But that doesn't mean they shouldn't consider the different asset classes to invest in as well, especially if a plan sponsor has an "absolute return" class of managers. 
+
+Interesting Notes **Not Included in write up**
+
+* asset value-based fees led private equity partnerships to be very aggressive in valuing firms and delayed exiting investments
+

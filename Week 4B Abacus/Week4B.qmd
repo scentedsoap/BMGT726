@@ -1,0 +1,15 @@
+---
+title: Week 4B Goldman Sachs and the ABACUS Deal
+author: Bryan Zhang
+---
+
+1.  Paulsons bet against the super senior tranche is depicted as another trade because of the risk associated with the bet because the Super Senior tranche represented a much higher portion of the CDO. The underlying principal/value was a $1.1 billion compared to $.228 billion. This is where ABN AMRO, the dutch bank that was the parent to ACA was brought into the deal because ACA was willing to sell protection (meaning they were willing to insure the underlying principle of the super senior tranche) but the significant $1.1 billion exposure required a company with more capital to reduce the credit risk (risk of ACA not being able to insure). The arrows from the Investors flowing towards the ACABUS deal represent the purchasing of bonds with default risk and the arrows flowing towards Goldman and Paulson represent payouts of Credit Default Swaps in the event that the underlying securities in the CDO default. The actual cash went to the sellers of the A-1 and A-2 notes. The ABACUS transaction was kind of like a synthetic CDO-squared because no party in the transaction actually held a complete position in the Collateralized Debt Obligation itself (ABACUS). Goldman Sachs, the originator of the CDO did not hold the underlying portfolio in its balance sheet and so the payment from the Credit Default Swaps were based on what a "hypothetical portfolio holder" would experience. The Investors in this CDO (ACA, IKB) also did not completely hold the underlying portfolio as well. Instead they invested around $190 million to create a collateral portfolio compared to the $1 billion+ tranches of securities in the CDO. This is called an unfunded transaction.
+
+
+2. Goldman Sachs committed fraud within the ABACUS deal because it misled ACA, an organization that helped choose the securities in the CDO and held a long position, that Paulson was long on the equity portion (First Loss) and did not have any short interest. Goldman also used ACA's brand name to attract investments from IKB and buying protection from ABN-AMRO without disclosing that Paulson had a significant influence within the security selection process. I think Goldman Sachs paid millions of dollars to settle because a jury might not fully understand the CDO/CDS market and Goldman Sachs reputation might be tainted in public display
+
+
+3. I think that Deomcrats would think that the Abacus transaction is a good symbol of the financial crisis because they believe that part of the crisis was partly fueled by deceit/shady practices by financial instutions when structuring complex derivative deals. Republicans believed that the financial crisis was not so much related to CDOs and CDSs but more so the overall credit bubble and negligence of credit rating agencies and due diligence. 
+
+
+

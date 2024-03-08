@@ -1,0 +1,15 @@
+---
+title: Week 1B Extra Creidt Define Contribution Plans
+author: Bryan Zhang
+---
+
+6. ***EXTRA CREDIT: Read the paper by Dahlquist et al. What is the purpose of defining a default asset allocation for a pension fund? Provide a conceptual example of different pension funds for which different default allocations would be appropriate.
+
+asset allocation for pension funds might depend on exogenous (outside) factors like realized historical returns on different asset classes and the financial position of the beneficiaries within the system. They believe that a default asset allocation for  a pension fund could provide a starting baseline that can be customized to suit an investors preference. 
+
+7. I think that target date funds can rebalance every year, or even longer just to meet the target allocations of the underlying fund. I don't see a need for target date funds to respond to short-term large market movements as the investment horizon is more long term. With the trillions invested in target date funds, I'd imagine that rebalancing all at once would be very difficult due price impact and liqduity. I also believe that announcing the rebalancing strategy may cause prices to react to new information, which could cause asset prices to move against the plan manager doing the rebalancing. 
+
+8. I think that Thaler would mostly agree with this statement because requiring that employees join is a sure way to achieve a 100% participation rate within the retirement plan. In his paper with Benartzia, Thaler makes the point that not enough people are participating in company sponsered pension plans, which would be mitigated in this scenario. I also think Thaler would agree with the life cycle fund because the decision to rebalance doesn't fall under the responsbility of the employee (who is likely not be a sophisticated investor), but rather it is already built into the fund. 
+
+
+9. I think Vanguard would like the paper by Benartzi and Thaler because they make the argument investing in a broad index fund is superior to investing in company stock. Vanguard must be happy to hear so because that means they have a superior product. The main takeaway I got from the paper was that saving for retirement is important, and that plan sponsors should boost participation rates. This means more customers for Vanguard, who would gladly approve of this message. 

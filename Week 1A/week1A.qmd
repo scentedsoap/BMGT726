@@ -1,0 +1,18 @@
+---
+title: Week 1A Who Owns and Manages Assets
+author: Bryan Zhang
+---
+
+1. True, alpha can be thought of as the excess return on top of the mean. Beta can be thought of as the covariance between the returns of an asset and the market portfolio
+
+2. True because understanding the deviation behind the returns between an underlying benchmark is important for understanding whether there is a real excess return (alpha) or if there is just higher volatility (beta)
+
+3. False, Index funds have been growing for recent years because they have very low fees and track a basket of securities mimic a market portfolio or a subsection of the market portfolio (could be an industry specific index like the SP500 Apparel Retail Sub Industry Index) that results in beta that is very close to 1(perfectly correlated with the market) Intuitively, I think investors want to limit the costs/fees associated with investing as much as possible and index funds provide them the opportunity to do so!
+
+4. True, being able to understand how risks of a pension plan’s liabilities are valuable insights that could help keep stable funding levels for the fund itself. Thus pension funds are willing to pay a premium
+
+5. Uncertain, the typical US pension plan has stayed relatively consistent with its allocation towards equities from the Bar Chart showing the **Global Pensions Asset Allocation**. There has been a higher shift in Alteratives growing from just 5% (1995) to 19% (2012) which include hedge funds and private equity. 
+
+6. True, they are in the business of passive indexing (Index Funds, ETFs), and are trying to attract the largest AUM compared to other asset managers. 
+
+7. Mostly true, In the most recent report (2023), the report highlights the importance of new AI technology, regulations (Sustainable Finance Disclosure Regulation), and how asset managers investments effect Envrionmental and Social problems. 

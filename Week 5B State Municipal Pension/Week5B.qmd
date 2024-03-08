@@ -1,0 +1,50 @@
+---
+title: Week 5B State and Municipal Pension Funds, Puerto Rico
+author: Bryan Zhang
+---
+
+1. The choice of a discount rate in the valuation of liabilities is violated by the accounting standards in 2010. Economists believe that liabilities should be discounted based on a rate that reflects the certaintanty of paying back the liabiility, while most pensions discount future liabilities based on the expected returns from the pension assets. This can lead to a higher funding ratio because discount rate based on expected return on the assets is higher than the discount rate based on the certainty of repayment. Most economist suggest that the discount rate based on the certainty of repayment should be close to the risk free rate because there is a high certainty that the liabilities will be repaid. 
+
+2. I think that economists would agree with the Fed Notes, specifically the approach by private and state & local pensions to discount their liabilities using the yield on a AAA rated bond. On the other hand, economists will not agree with the acturarial discount rate used for federal pension liabilites. ^[Introducing Actuarial Liabilities and Funding Status of Defined-Benefit Pensions in the U.S. Financial Accounts: https://www.federalreserve.gov/econresdata/notes/feds-notes/2014/introducing-actuarial-liabilities-funding-status-defined-benefit-pensions-us-financial-accounts-20141031.html]
+
+3. I think Douglas Elliot would suggest S&L governments would need to contribute an amount that is equal to the Accumulated Beneift Obligation ^[State and Local Pension Funding Deficit: 5B-Elliott-2010--state-local-pension-funding-deficits1206.pdf] In the previous case we saw that corporations use a PBO accounting method ^[HBS Coursepack: General Motors US Pension Funds *Luis M. Viceira, Helen H. Tung*] which would would likely increase the amount of dolalrs the state and local governments would have to contribute
+
+
+4. The put-call parity might suggest that the sum of the price of the "put option" insurance policy and the value of assets within the plan should be equal to the sum of the price of the "call option" insurance policy and the value of assets needed to cover all obligations at a future date. Because Biggs had a higher deficit ($3 trillion), and modeled the deficit using the Black-Scholes model (I think that the price he is trying to model is a put option), a higher interest rate could have caused the value of the put-option to decline, reducing the deficit closer to Novy-Marx and Rauh ($2.4 trillion)
+
+$$ \text{Put Call Parity} \to S + P = C + PV(X) $$
+
+$S$ = Stock Price
+$P$ = Put option price
+$C$ = Call option price
+$X$ = Present Value Strike price^[Wall Street Mojo: https://www.wallstreetmojo.com/put-call-parity/]
+
+
+
+5. To estimate the implied rate I also approximated the future value of the liability as a zero coupon bond so that the maturity is equal to the duration (13 years). Then using the future value, I solved for the approximate discount rate (implied rate) of the US Treasury. 
+
+$$ FV = PV_{as} * (1 + r_{as})^n = 3.1 * (1 + .08) ^ 13 = 8.4 $$
+
+$$ r_{trsy} = \left(\frac{FV}{PV_{trsy}}\right)^{\frac{1}{n}} - 1 = \left(\frac{8.4}{4.4}\right)^{\frac{1}{13}} - 1 = 5.1\% $$ 
+
+
+```{python}
+# calculate the future value
+pv_as = 3.1
+r_as = .08
+n = 13
+fv = pv_as * (1 + r_as) ** n
+print(f"fv  = {fv}")
+
+# calculate the discount rate using the previously computed future value
+pv_t = 4.4
+r_t = (fv / pv_t) ** (1/n) - 1
+print(f"r_t = {r_t}")
+```
+
+6. On a constitutional level, there are arguments that having a "state bankruptcy" might interfere with the states ability to operate on an independent level, which Skeel proposes that it could be mitigated by leaving the decision to file for bankruptcy up to the discretion of the state. On a legal level, the restructuring process for a state will involve the creditors (bondholders, state workers). A state might be limited in its ability to sell of assets to pay its creditors but Skeel suggests that states might have higher bargaining power in renegotiating contracts with its creditors ^[Give States a Way to Go Bakrupt *David Skeel*]
+
+7. I think a "Republican" approach would be for the puerto rico government to cut spending or default, while a "Democratic" approach might involve some type of federal fiscal stimulus (bailout). Skeel would probably lean towards the Republican approach as he believes letting states go bankrupt to reorganize its debts. 
+
+8. I think Franklin is anticipating that a portion of their interest and principal is still recoverable from its puerto rico municipal bonds. Instead of selling them at a huge discount through a liquidation, Franklin can still hold on to the securities just in case. 
+
